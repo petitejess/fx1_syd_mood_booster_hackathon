@@ -9,8 +9,32 @@ const confusedMood = document.getElementById('confused_button');
 const boredMood = document.getElementById('bored_button');
 
 function showQuote(quote) {
-    // Display containers
+    // The display containers
+    const homepageElements = document.querySelectorAll(".homepage-element");
+    const quotepageElements = document.querySelectorAll(".quotepage-element");
+
+    // Try Again button
+    const tryAgain = document.getElementById('again');
+
+    function swapElements(show) {
+        // Hide homepage elements
+          for(let i = 0; i < homepageElements.length; i++) {
+            homepageElements[i].style.display = show === "show home" ? "block" : "none";
+        }
+
+        // Show quote elements
+        for(let i = 0; i < quotepageElements.length; i++) {
+            quotepageElements[i].style.display = show === "show quote" ? "block" : "none";
+        }
+        tryAgain.style.display = show === "show quote" ? "block" : "none";
+    }
     
+    // Try Again button to display homepage elements back
+    tryAgain.addEventListener("click", () => {
+      swapElements("show home");
+    })
+
+    swapElements("show quote");
     let quoteBody = document.getElementById("quote_body");
     quoteBody.innerHTML = `${quote.text}`;
 }
@@ -25,8 +49,14 @@ async function getQuote(category) {
             }
         });
         let quote = await response.json();
+
+        // To check the data in console
         console.log(quote[0]);
+
         showQuote(quote[0]);
+
+        // // Use code below, comment code above when not checking the API data (so we don't exceed allowed API request quota)
+        // showQuote({text: 'AAAAAAAAAA'});
     }
     catch(err) {
         console.log(err);
