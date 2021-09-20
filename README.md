@@ -16,9 +16,9 @@ The app would show a quote based on the user's mood in a hope to boost the mood.
 
 The homepage will have 8 mood buttons for users to click: **Happy** button, **Sad** button, **Excited** button, **Tired** button, **Scared** button, **Anxious** button, **Confused** button, **Bored** button.
 
-Once user click one of the button, the buttons will be replaced with a section that shows the quote.
+Once the user clicks one of the buttons, all the buttons will be replaced with a section that shows the quote.
 
-A **Try Again** button will show up below the quote section for user to click to restart from begining.
+A **Try Again** button will show up below the quote section for the user to click to restart from beginning.
 
 &nbsp;  
 
@@ -41,7 +41,7 @@ A fetch request is made to an API to get a single quote from the category, which
 
 The page has elements that are shown or hidden using CSS property *display* manipulation that will swap elements to give a feeling of a Single Page Application.
 
-The controllers to swap the elements are the mood buttons and Try Again buttons. When user clicks one of the mood button, it will cause all elements that have class name *homepage-element* to be hidden and the elements that have class name *quotepage-element* to be shown. The Try Again button will do the reverse. 
+The controllers to swap the elements are the mood buttons and the Try Again button. When a user clicks one of the mood buttons, it will cause all elements that have class name *homepage-element* to be hidden and the elements that have class name *quotepage-element* to be shown. The Try Again button will do the reverse. 
 
 &nbsp;  
 
