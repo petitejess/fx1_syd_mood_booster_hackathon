@@ -9,6 +9,9 @@ const confusedMood = document.getElementById('confused_button');
 const boredMood = document.getElementById('bored_button');
 
 // Display containers
+// function getElement() {
+    
+// }
 
 
 function showQuote(quotes, n) {
@@ -16,6 +19,8 @@ function showQuote(quotes, n) {
   if (quotes[n].author) {
     console.log(`- ${quotes[n].author}`);
   }
+    let quoteBody = document.getElementById("quote_body")
+    quoteBody.innerHTML = `${quotes[n].text}`
 }
 
 function getRandomInt(max) {
@@ -41,7 +46,7 @@ async function getQuote(minRange) {
 }
 
 happyMood.addEventListener("click", () => {
-  getQuote(0);
+    getQuote(0)
 });
 
 sadMood.addEventListener("click", () => {
