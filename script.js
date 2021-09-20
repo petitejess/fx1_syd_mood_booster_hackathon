@@ -1,4 +1,4 @@
-function buttons(happyMood) {
+function buttons() {
     const happyMood = document.getElementById('feelings');
     const sadMood = document.getElementById('feelings_sad');
     const excitedMood = document.getElementById('feelings_excited');
@@ -7,6 +7,7 @@ function buttons(happyMood) {
     const anxiousMood = document.getElementById('feelings_anxious');
     const confusedMood = document.getElementById('feelings_confused');
     const boredMood = document.getElementById('feelings_bored');
+    console.log(happyMood)
 }
 
 buttons()
