@@ -8,25 +8,25 @@ const anxiousMood = document.getElementById('anxious_button');
 const confusedMood = document.getElementById('confused_button');
 const boredMood = document.getElementById('bored_button');
 
-function showQuote(quotes, n) {
+function showQuote(quote) {
     // Display containers
     
-
     let quoteBody = document.getElementById("quote_body");
-    quoteBody.innerHTML = `${quotes[n].text}`;
+    quoteBody.innerHTML = `${quote.text}`;
 }
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
-
-async function getQuote(minRange) {
-    // Get random index number for quote
-    let n = getRandomInt(minRange + 99);
+async function getQuote(category) {
     try {
-        let response = await fetch("https://type.fit/api/quotes");
-        let quotes = await response.json();
-        showQuote(quotes, n);
+        let response = await fetch(`https://famous-quotes4.p.rapidapi.com/random?category=${category}&count=1`, {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "famous-quotes4.p.rapidapi.com",
+                "x-rapidapi-key": "b4096686a4msh43536491990dcd7p1cbadcjsnf3dbd6782036"
+            }
+        });
+        let quote = await response.json();
+        console.log(quote[0]);
+        showQuote(quote[0]);
     }
     catch(err) {
         console.log(err);
@@ -34,33 +34,33 @@ async function getQuote(minRange) {
 }
 
 happyMood.addEventListener("click", () => {
-    getQuote(0);
+    getQuote("happiness");
 });
 
 sadMood.addEventListener("click", () => {
-    getQuote(100);
+    getQuote("positive");
 });
 
 excitedMood.addEventListener("click", () => {
-    getQuote(200);
+    getQuote("amazing");
 });
 
 tiredMood.addEventListener("click", () => {
-    getQuote(300);
+    getQuote("strength");
 });
 
 scaredMood.addEventListener("click", () => {
-    getQuote(400);
+    getQuote("courage");
 });
 
 anxiousMood.addEventListener("click", () => {
-    getQuote(500);
+    getQuote("peace");
 });
 
 confusedMood.addEventListener("click", () => {
-    getQuote(600);
+    getQuote("wisdom");
 });
 
 boredMood.addEventListener("click", () => {
-    getQuote(700);
+    getQuote("funny");
 });
