@@ -8,19 +8,12 @@ const anxiousMood = document.getElementById('anxious_button');
 const confusedMood = document.getElementById('confused_button');
 const boredMood = document.getElementById('bored_button');
 
-// Display containers
-// function getElement() {
-    
-// }
-
-
 function showQuote(quotes, n) {
-  console.log(quotes[n].text);
-  if (quotes[n].author) {
-    console.log(`- ${quotes[n].author}`);
-  }
-    let quoteBody = document.getElementById("quote_body")
-    quoteBody.innerHTML = `${quotes[n].text}`
+    // Display containers
+    
+
+    let quoteBody = document.getElementById("quote_body");
+    quoteBody.innerHTML = `${quotes[n].text}`;
 }
 
 function getRandomInt(max) {
@@ -28,51 +21,46 @@ function getRandomInt(max) {
 }
 
 async function getQuote(minRange) {
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };
-    
     // Get random index number for quote
     let n = getRandomInt(minRange + 99);
     try {
-      let response = await fetch("https://type.fit/api/quotes", requestOptions);
-      let quotes = await response.json();
-      showQuote(quotes, n);
+        let response = await fetch("https://type.fit/api/quotes");
+        let quotes = await response.json();
+        showQuote(quotes, n);
     }
     catch(err) {
-      console.log(err);
+        console.log(err);
     }
 }
 
 happyMood.addEventListener("click", () => {
-    getQuote(0)
+    getQuote(0);
 });
 
 sadMood.addEventListener("click", () => {
-  getQuote(100);
+    getQuote(100);
 });
 
 excitedMood.addEventListener("click", () => {
-  getQuote(200);
+    getQuote(200);
 });
 
 tiredMood.addEventListener("click", () => {
-  getQuote(300);
+    getQuote(300);
 });
 
 scaredMood.addEventListener("click", () => {
-  getQuote(400);
+    getQuote(400);
 });
 
 anxiousMood.addEventListener("click", () => {
-  getQuote(500);
+    getQuote(500);
 });
 
 confusedMood.addEventListener("click", () => {
-  getQuote(600);
+    getQuote(600);
 });
 
 boredMood.addEventListener("click", () => {
-  getQuote(700);
+    getQuote(700);
 });
