@@ -21,3 +21,16 @@ h1 {
 #again {
   color: red;
 }
+
+/* Classes for display/hide elements */
+.homepage-element {
+  display: block;
+}
+
+.quotepage-element {
+  display: none;
+}
+
+#again {
+  display: none;
+}
