@@ -13,3 +13,11 @@ body {
 h1 {
   text-align: center;
 }
+
+#quote_body {
+  color: yellow;
+}
+
+#again {
+  color: red;
+}
