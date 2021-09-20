@@ -1,15 +1,13 @@
-function getData() {
+function getQuote() {
     var requestOptions = {
-        method: 'GET',
-        redirect: 'follow'
-      };
-
-    getQuote = {
-      fetch("https://quotes.rest/qod/categories", requestOptions)
-        .then(response => response.JSON())
-        .then(result => console.log(result))
-        .catch(error => console.log('error', error));
-    }
-}
-
-getData()
+      method: 'GET',
+      redirect: 'follow'
+    };
+  
+    fetch("https://type.fit/api/quotes", requestOptions)
+      .then(response => response.json())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+  }
+  
+  getQuote();
