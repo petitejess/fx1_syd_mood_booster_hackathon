@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Mood Booster</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Mood Booster</title>
+    </head>
+    <body>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container justify-content-center">
-        <a class="navbar-brand">Mood Booster</a>
-      </div>
-    </nav>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container justify-content-center">
+                <a class="navbar-brand">Mood Booster</a>
+            </div>
+        </nav>
 
-    <!-- Showcase -->
-    <section class="bg-light p-5 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="heading">How are you today?</h1>
-          <!-- Will be replaced with response content -->
-          <p>Click one button that represents your feeling now.</p>
-        </div>
-      </section>
+        <!-- Showcase -->
+        <section class="bg-light p-5 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="heading">How are you today?</h1>
+                        <!-- Will be replaced with response content -->
+                        <p class="homepage-element">Click one button that represents your feeling now.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Will be replaced with response content -->
         <!-- Button -->
-        <section class="p-5">
-        <div class="container">
-          
-          <div class="row text-center">
-            <button type="button" class="col-3 btn btn-danger mr-10" id="happy_button">Happy</button>
-            <button type="button" class="col-3 btn btn-dark" id="sad_button">Sad</button>
-            <button type="button" class="col-3 btn btn-warning" id="excited_button">Excited</button>
-            <button type="button" class="col-3 btn btn-secondary" id="tired_button">Tired</button>
-            <button type="button" class="col-3 btn btn-info" id="scared_button">Scared</button>
-            <button type="button" class="col-3 btn btn-warning" id="anxious_button">Anxious</button>
-            <button type="button" class="col-3 btn btn-primary" id="confused_button">Confused</button>
-            <button type="button" class="col-3 btn btn-light" id="bored_button">Bored</button>
-          </div>
-          
-        </div>
-      </section>
+        <section class="p-5 homepage-element">
+            <div class="container">
+                <div class="row text-center">
+                    <button type="button" class="col-3 btn btn-danger mr-10" id="happy_button">Happy</button>
+                    <button type="button" class="col-3 btn btn-dark" id="sad_button">Sad</button>
+                    <button type="button" class="col-3 btn btn-warning" id="excited_button">Excited</button>
+                    <button type="button" class="col-3 btn btn-secondary" id="tired_button">Tired</button>
+                    <button type="button" class="col-3 btn btn-info" id="scared_button">Scared</button>
+                    <button type="button" class="col-3 btn btn-warning" id="anxious_button">Anxious</button>
+                    <button type="button" class="col-3 btn btn-primary" id="confused_button">Confused</button>
+                    <button type="button" class="col-3 btn btn-light" id="bored_button">Bored</button>
+                </div>
+            </div>
+        </section>
 
         <!-- This response content will replace buttons -->
-        <section class="bg-dark text-light p-5 text-center">
-        <div class="col-12">
-          <div class="row">
+        <section class="bg-dark text-light p-5 text-center quotepage-element">
             <div class="col-12">
-              <!-- Negative/Postive -->
-              <p class="text-light">
-                ”Good on ya! Here’s a quote to add the goodness into your day!”
-              </p>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Negative/Postive -->
+                        <p class="text-light">
+                          ”Good on ya! Here’s a quote to add the goodness into your day!”
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="col-12">
-              <!-- Quote -->
-              <p id="quote_body">”A quote a day keeps the depression away!”</p>
+                <!-- Quote -->
+                <p id="quote_body">”A quote a day keeps the depression away!”</p>
             </div>
-          </section>
-            <button class="col-12" id="again">Try Again</button>
-          </div>
-        </div>
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-          crossorigin="anonymous"
-        ></script>
-      </div>
-    </div>
+        </section>
+        
+        <!-- Button to return to homepage -->
+        <button class="col-12" id="again">Try Again</button>
 
-    <!-- Footer -->
-    <footer class="p-4 bg-dark text-white text-center position-relative">
-      <div class="container">
-      <p class="lead">
-        Copyright &copy;. Ana Lazarevska. Duong Pham. Jessica
-        Gozali.
-      </p>
-      </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+        <!-- Footer -->
+        <footer class="p-4 bg-dark text-white text-center position-relative">
+          <div class="container">
+          <p class="lead">
+            Copyright &copy;. Ana Lazarevska. Duong Pham. Jessica
+            Gozali.
+          </p>
+          </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous">
+        </script>
+        <script src="./script.js"></script>
+    </body>
 </html>
