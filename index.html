@@ -16,7 +16,7 @@
   <body>
     <main>
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-light" id="nav-style">
         <div class="container justify-content-center">
           <a href="/" id="home-link" class="navbar-brand">Mood Booster</a>
         </div>
@@ -106,12 +106,12 @@
       </section>
 
       <!-- This response content will replace buttons -->
-      <section class="bg-dark text-light p-5 text-center quotepage-element">
+      <section class="bg-primary text-light p-5 text-center quotepage-element">
         <div class="col-12">
           <div class="row">
             <div class="col-12">
               <!-- Negative/Postive -->
-              <p class="text-light intro-text">
+              <p class="text-light intro-text" id="border">
                 Here's a quote to add the goodness into your day!
               </p>
             </div>
@@ -135,10 +135,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="p-4 bg-dark text-white text-center position-relative">
+    <footer class="p-4 text-dark text-center position-relative" id="foot-style">
       <div class="container">
         <p class="lead">
-          Copyright &copy;. Ana Lazarevska. Duong Pham. Jessica Gozali.
+          Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ana Lazarevska. Duong Pham. Jessica Gozali.
         </p>
       </div>
     </footer>

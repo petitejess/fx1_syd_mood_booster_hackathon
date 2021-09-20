@@ -15,11 +15,7 @@ h1 {
 }
 
 #quote_body {
-  color: yellow;
-}
-
-#again {
-  color: red;
+  color: rgb(245, 224, 35);
 }
 
 /* Classes for display/hide elements */
@@ -28,10 +24,6 @@ h1 {
 }
 
 .quotepage-element {
-  display: none;
-}
-
-#again {
   display: none;
 }
 
@@ -89,17 +81,8 @@ h1 {
 
 #again {
   margin: 0px auto;
-  background: #fdfc47; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24fe41,
-    #fdfc47
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24fe41,
-    #fdfc47
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(243, 198, 113);
+  color: white;
 }
 
 /* Blockquote styling */
@@ -145,4 +128,16 @@ blockquote cite:before {
 .spacer-10 {
   display: block;
   height: 120px;
+}
+
+#border {
+  border-bottom-style: solid;
+}
+
+#nav-style {
+  background-color: #e3f2fd;
+}
+
+#foot-style {
+  background-color: #e3f2fd;
 }
