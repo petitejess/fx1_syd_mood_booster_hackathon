@@ -1,12 +1,12 @@
 // Buttons
-const happyMood = document.getElementById('feelings');
-const sadMood = document.getElementById('feelings_sad');
-const excitedMood = document.getElementById('feelings_excited');
-const tiredMood = document.getElementById('feelings_tired');
-const scaredMood = document.getElementById('feelings_care');
-const anxiousMood = document.getElementById('feelings_anxious');
-const confusedMood = document.getElementById('feelings_confused');
-const boredMood = document.getElementById('feelings_bored');
+const happyMood = document.getElementById('happy_button');
+const sadMood = document.getElementById('sad_button');
+const excitedMood = document.getElementById('excited_button');
+const tiredMood = document.getElementById('tired_button');
+const scaredMood = document.getElementById('scared_button');
+const anxiousMood = document.getElementById('anxious_button');
+const confusedMood = document.getElementById('confused_button');
+const boredMood = document.getElementById('bored_button');
 
 // Display containers
 
