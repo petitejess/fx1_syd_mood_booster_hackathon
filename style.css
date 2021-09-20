@@ -1,0 +1,15 @@
+.navbar-brand {
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.heading {
+  text-size-adjust: 10px;
+}
+
+h1 {
+  text-align: center;
+}

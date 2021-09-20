@@ -14,58 +14,78 @@
     <title>Mood Booster</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light"
-      style="background-color: #8d8d8d"
-    >
-      <a href="#" class="navbar-brand">Mood Booster</a>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container justify-content-center">
+        <a class="navbar-brand">Mood Booster</a>
+      </div>
     </nav>
-    <div class="row">
-      <div class="col-12">
-        <h1>How are you today?</h1>
+
+    <!-- Showcase -->
+    <section class="bg-light p-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="heading">How are you today?</h1>
+          <!-- Will be replaced with response content -->
+          <p>Click one button that represents your feeling now.</p>
+        </div>
+      </section>
+
         <!-- Will be replaced with response content -->
-        <p class="intro-text">Click one button that represents your feeling now.</p>
-      </div>
-
-      <!-- Will be replaced with response content -->
-      <div class="col-12 mood-buttons">
-        <div class="row">
-          <button id="feelings" class="col-3">Happy</button>
-          <button id="feelings_sad" class="col-3">Sad</button>
-          <button id="feelings_excited" class="col-3">Excited</button>
-          <button id="feelings_tired" class="col-3">Tired</button>
-          <button id="feelings_care" class="col-3">Care</button>
-          <button id="feelings_anxious" class="col-3">Anxious</buttonv>
-          <button id="feelings_confused" class="col-3">Confused</button>
-          <button id="feelings_bored" class="col-3">Bored</button>
-        </div>
-      </div>
-
-      <!-- This response content will replace buttons -->
-      <div class="col-12" id="response-content">
-        <div class="row">
-          <div class="col-12">
-            <!-- Negative/Postive -->
-            <p class="mood-text">
-              ”Good on ya! Here’s a quote to add the goodness into your day!”
-            </p>
+        <!-- Button -->
+        <section class="p-5">
+        <div class="container">
+          
+          <div class="row text-center">
+            <button type="button" class="col-3 btn btn-danger mr-10">Happy</button>
+            <button type="button" class="col-3 btn btn-dark">Sad</button>
+            <button type="button" class="col-3 btn btn-warning">Excited</button>
+            <button type="button" class="col-3 btn btn-secondary">Tired</button>
+            <button type="button" class="col-3 btn btn-info">Care</button>
+            <button type="button" class="col-3 btn btn-warning">Anxious</button>
+            <button type="button" class="col-3 btn btn-primary">Confuse</button>
+            <button type="button" class="col-3 btn btn-light">Bored</button>
           </div>
-          <div class="col-12">
-            <!-- Quote -->
-            <p id="the-quote">”A quote a day keep the depression away!”</p>
-          </div>
-          <div class="col-12">Try Again</div>
+          
         </div>
+      </section>
+
+        <!-- This response content will replace buttons -->
+        <section class="bg-dark text-light p-5 text-center">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <!-- Negative/Postive -->
+              <p class="text-light">
+                ”Good on ya! Here’s a quote to add the goodness into your day!”
+              </p>
+            </div>
+          </section>
+            <div class="col-12">
+              <!-- Quote -->
+              <p>”A quote a day keep the depression away!”</p>
+            </div>
+            <div class="col-12">Try Again</div>
+          </div>
+        </div>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+          crossorigin="anonymous"
+        ></script>
       </div>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"
-      ></script>
     </div>
-    <footer>
-      Mood Booster. Copyright &copy;. Ana Lazarevska. Duong Pham. Jessica
-      Gozali.
+
+    <!-- Footer -->
+    <footer class="p-4 bg-dark text-white text-center position-relative">
+      <div class="container">
+      <p class="lead">
+        Copyright &copy;. Ana Lazarevska. Duong Pham. Jessica
+        Gozali.
+      </p>
+      </div>
     </footer>
     <script src="./script.js"></script>
   </body>
