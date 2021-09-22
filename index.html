@@ -10,135 +10,128 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Mood Booster</title>
   </head>
   <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav-style">
+      <div class="container justify-content-center">
+        <a href="/" id="home-link" class="navbar-brand">Mood Booster</a>
+      </div>
+    </nav>
+    
     <main>
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light" id="nav-style">
-        <div class="container justify-content-center">
-          <a href="/" id="home-link" class="navbar-brand">Mood Booster</a>
-        </div>
-      </nav>
-
-      <!-- Showcase -->
       <section class="bg-light p-5 text-center">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h1 class="heading">How are you today?</h1>
-              <!-- Will be replaced with response content -->
-              <p class="homepage-element">
-                Click one button that represents how you are feeling right now.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Will be replaced with response content -->
+      <!-- Showcase -->
+      <!-- Will be replaced with quote content -->
       <!-- Button -->
-      <section class="p-5 homepage-element">
-        <div class="container" style="text-align: center">
-          <br />
-          <br />
-          <br />
-          <div class="text-center">
-            <button
-              type="button"
-              class="btn btn-danger btn-lg hero-button"
-              id="happy_button"
-            >
-              Happy 😊
-            </button>
-            <button
-              type="button"
-              class="btn btn-dark btn-lg hero-button"
-              id="sad_button"
-            >
-              Sad 😢
-            </button>
-            <button
-              type="button"
-              class="btn btn-warning btn-lg hero-button"
-              id="excited_button"
-            >
-              Excited 🤩
-            </button>
-            <button
-              type="button"
-              class="btn btn-secondary btn-lg hero-button"
-              id="tired_button"
-            >
-              Tired 🤤
-            </button>
-            <button
-              type="button"
-              class="btn btn-info btn-lg hero-button"
-              id="scared_button"
-            >
-              Scared 😱
-            </button>
-            <button
-              type="button"
-              class="btn btn-warning btn-lg hero-button"
-              id="anxious_button"
-            >
-              Anxious 😰
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary btn-lg hero-button"
-              id="confused_button"
-            >
-              Confused 😕
-            </button>
-            <button
-              type="button"
-              class="btn btn-light btn-lg hero-button"
-              id="bored_button"
-            >
-              Bored 🥱
-            </button>
+      <div class="btn-showcase homepage-element">
+        <p class="mb-5 p-4 text-center">
+          Click one button that represents how you are feeling right now.
+        </p>
+        <section>
+          <div class="container" style="text-align: center">
+            <div class="text-center buttons">
+              <button
+                type="button"
+                class="btn btn-danger btn-lg hero-button"
+                id="happy_button"
+              >
+                Happy 😊
+              </button>
+              <button
+                type="button"
+                class="btn btn-dark btn-lg hero-button"
+                id="sad_button"
+              >
+                Sad 😢
+              </button>
+              <button
+                type="button"
+                class="btn btn-warning btn-lg hero-button"
+                id="excited_button"
+              >
+                Excited 🤩
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-lg hero-button"
+                id="tired_button"
+              >
+                Tired 🤤
+              </button>
+              <button
+                type="button"
+                class="btn btn-info btn-lg hero-button"
+                id="scared_button"
+              >
+                Scared 😱
+              </button>
+              <button
+                type="button"
+                class="btn btn-warning btn-lg hero-button"
+                id="anxious_button"
+              >
+                Anxious 😰
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg hero-button"
+                id="confused_button"
+              >
+                Confused 😕
+              </button>
+              <button
+                type="button"
+                class="btn btn-light btn-lg hero-button"
+                id="bored_button"
+              >
+                Bored 🥱
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <!-- This response content will replace buttons -->
-      <section class="text-light p-5 text-center quotepage-element" id="changing-bg">
-        <div class="col-12">
+        </section>
+      </div>
+  
+      <div class="quote-showcase quotepage-element">
+        <!-- This quote content will replace buttons -->
+        <section class="text-light text-center">
           <div class="row">
-            <div class="col-12">
-              <!-- Negative/Postive -->
+            <div class="col-12" id="changing-bg">
               <p class="text-light intro-text" id="border">
                 Here's a quote to add the goodness into your day!
               </p>
+              <!-- Quote -->
+              <blockquote id="quote_body">
+                A quote a day keeps the depression away!
+              </blockquote>
+            </div>
+            <div class="col-12">
+              <!-- Button to return to homepage -->
+              <button class="btn btn-info btn-lg hero-button" id="again">
+                Try Again
+              </button>
             </div>
           </div>
-        </div>
-        <div class="col-12">
-          <!-- Quote -->
-
-          <blockquote id="quote_body">
-            A quote a day keeps the depression away!
-          </blockquote>
-        </div>
-      </section>
-
-      <!-- <div class="spacer-10"></div> -->
-
-      <!-- Button to return to homepage -->
-      <button class="btn btn-info btn-lg hero-button" id="again">
-        Try Again
-      </button>
+        </section>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="p-4 text-dark text-center position-relative" id="foot-style">
       <div class="container">
         <p class="lead">
-          Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ana Lazarevska. Duong Pham. Jessica Gozali.
+          Copyright &copy; <script>document.write(new Date().getFullYear())</script>. Ana Lazarevska. Duong Pham. Jessica Gozali.
         </p>
       </div>
     </footer>

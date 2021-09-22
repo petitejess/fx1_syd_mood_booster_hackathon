@@ -1,45 +1,70 @@
-.navbar-brand {
-  text-align: center;
-  font-size: 2em;
+nav,
+footer {
+  min-height: 5vh;
 }
 
 main {
   min-height: 90vh;
 }
 
+#nav-style {
+  background-color: #e3f2fd;
+}
+
+.navbar-brand {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#home-link:hover {
+  cursor: pointer;
+}
+
 .heading {
-  text-size-adjust: 10px;
+  font-size: 2.25em;
 }
 
 h1 {
   text-align: center;
 }
 
-#quote_body {
-  /* color: rgb(245, 224, 35); */
-  color: #fff;
+.btn-showcase {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 5em 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Classes for display/hide elements */
-.homepage-element {
-  display: block;
+.quote-showcase {
+  width: 100%;
+  min-height: 60vh;
+  padding: 5em 0;
+  margin: 0 auto;
 }
 
-.quotepage-element {
-  display: none;
+/**
+  HOMEPAGE ELEMENTS
+**/
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-button {
-  width: 250px;
-  padding: 8px;
+  width: 200px;
+  height: 150px;
   font-size: 8mm;
-  margin: 0px 20px 20px 0px;
+  margin: 0px auto 1em;
 }
 
-/* Button color */
-
+/* Button colour */
 #happy_button {
-  background: #ff69b4;
+  background: #ff72b8;
 }
 
 #sad_button {
@@ -54,12 +79,7 @@ h1 {
 
 #tired_button {
   background-color: #ff3cac;
-  background-image: linear-gradient(
-    225deg,
-    #ff3cac 0%,
-    #784ba0 50%,
-    #2b86c5 100%
-  );
+  background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
 }
 
 #scared_button {
@@ -81,24 +101,33 @@ h1 {
   background: #d8bfd8;
 }
 
+/**
+  QUOTEPAGE ELEMENTS
+**/
+#changing-bg p {
+  padding: 2em;
+}
+
+#quote_body {
+  color: #fff;
+}
+
 #again {
   display: none;
-  margin: 0px auto;
   background: #e3f2fd;
   color: rgba(0, 0, 0, .9);
   margin: 2em auto;
 }
 
 /* Blockquote styling */
-
 blockquote {
   display: block;
   font-family: Georgia, serif;
-  font-size: 10mm;
+  font-size: 1.5em;
   max-width: 950px;
   font-style: italic;
   margin: 0.25em auto;
-  padding: 0.35em 40px;
+  padding: 2em 40px;
   line-height: 1.45;
   position: relative;
 }
@@ -109,7 +138,7 @@ blockquote:before {
   content: "\201C";
   font-size: 80px;
   position: absolute;
-  left: -20px;
+  left: -10px;
   top: -20px;
   color: #7a7a7a;
 }
@@ -121,7 +150,7 @@ blockquote:after {
   font-size: 80px;
   position: absolute;
   right: 0px;
-  top: 0px;
+  bottom: -10px;
   color: #7a7a7a;
   transform: rotate(180deg);
 }
@@ -137,23 +166,20 @@ blockquote cite:before {
   content: "\2014 \2009";
 }
 
-#home-link:hover {
-  cursor: pointer;
-}
-
-.spacer-10 {
-  display: block;
-  height: 120px;
-}
-
 #border {
   border-bottom-style: solid;
 }
 
-#nav-style {
+/* Footer */
+#foot-style {
   background-color: #e3f2fd;
 }
 
-#foot-style {
-  background-color: #e3f2fd;
+/* Classes for display/hide elements */
+.homepage-element {
+  display: flex;
+}
+
+.quotepage-element {
+  display: none;
 }

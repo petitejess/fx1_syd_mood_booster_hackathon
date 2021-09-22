@@ -51,7 +51,7 @@ The background colour for the quote would also change following the colour of th
 
 **Bootstrap** is used to style the app.
 
-API used in this app is **Famous Quotes API** (https://rapidapi.com/saicoder/api/famous-quotes4/).
+API used in this app is [**Famous Quotes API**](https://rapidapi.com/saicoder/api/famous-quotes4/).
 
 This app is deployed on **AWS S3**, and using **CloudFront CDN**.
 
@@ -59,4 +59,4 @@ This app is deployed on **AWS S3**, and using **CloudFront CDN**.
 
 ## Acknowledgement
 
-Ana Lazarevska, Duong Pham and Jessica Gozali would like to thank our awesome Coder Academy educators (a.k.a. mentors), Nandini and Alex for helping us to make things possible!
+[Ana Lazarevska](https://github.com/aplazarevska), [Duong Pham](https://github.com/pduong987) and [Jessica Gozali](https://github.com/petitejess)Jessica Gozali would like to thank our awesome Coder Academy educators (a.k.a. mentors), Nandini and Alex for helping us to make things possible!

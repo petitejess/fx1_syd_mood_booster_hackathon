@@ -19,7 +19,7 @@ function showQuote(quote, bgColor) {
   function swapElements(show) {
     // Hide homepage elements
     for(let i = 0; i < homepageElements.length; i++) {
-      homepageElements[i].style.display = show === "show home" ? "block" : "none";
+      homepageElements[i].style.display = show === "show home" ? "flex" : "none";
     }
 
     // Show quote elements
@@ -43,22 +43,22 @@ function showQuote(quote, bgColor) {
 
 async function getQuote(category, bgColor) {
   try {
-    let response = await fetch(`https://famous-quotes4.p.rapidapi.com/random?category=${category}&count=1`, {
-      "method": "GET",
-      "headers": {
-        "x-rapidapi-host": "famous-quotes4.p.rapidapi.com",
-        "x-rapidapi-key": "b4096686a4msh43536491990dcd7p1cbadcjsnf3dbd6782036"
-      }
-    });
-    let quote = await response.json();
+    // let response = await fetch(`https://famous-quotes4.p.rapidapi.com/random?category=${category}&count=1`, {
+    //   "method": "GET",
+    //   "headers": {
+    //     "x-rapidapi-host": "famous-quotes4.p.rapidapi.com",
+    //     "x-rapidapi-key": "b4096686a4msh43536491990dcd7p1cbadcjsnf3dbd6782036"
+    //   }
+    // });
+    // let quote = await response.json();
 
-    // To check the data in console
-    console.log(quote[0]);
+    // // To check the data in console
+    // console.log(quote[0]);
 
-    showQuote(quote[0], bgColor);
+    // showQuote(quote[0], bgColor);
 
-    // // Use code below, comment code above when not checking the API data (so we don't exceed allowed API request quota)
-    // showQuote({text: 'AAAAAAAAAA bbbb ccc'}, bgColor);
+    // Use code below, comment code above when not checking the API data (so we don't exceed allowed API request quota)
+    showQuote({text: "A quote a day keeps the depression away!"}, bgColor);
   }
   catch(err) {
     console.log(err);
@@ -74,15 +74,15 @@ sadMood.addEventListener("click", () => {
 });
 
 excitedMood.addEventListener("click", () => {
-  getQuote("amazing", "rgb(117 231 169)");
+  getQuote("amazing", "#66dc9c");
 });
 
 tiredMood.addEventListener("click", () => {
-  getQuote("strength", "#ff3cac");
+  getQuote("strength", "#d58ef3");
 });
 
 scaredMood.addEventListener("click", () => {
-  getQuote("courage", "#a9c9ff");
+  getQuote("courage", "#ffbbec");
 });
 
 anxiousMood.addEventListener("click", () => {
