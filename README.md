@@ -1,7 +1,7 @@
 # FX1 Sydney Hackathon: Mood Booster
 
 >
-> Live app link: [https://d2v0ynt4jwppuc.cloudfront.net/](https://d2v0ynt4jwppuc.cloudfront.net/)
+> Live app link: [https://the-mood-booster.netlify.app/](https://the-mood-booster.netlify.app/)
 >
 
 &nbsp;  
@@ -13,6 +13,8 @@ The app would show a quote based on the user's mood in a hope to boost the mood.
 &nbsp;  
 
 ## User Interface
+
+![Mood Booster demo](./docs/mood-booster-demo.gif)
 
 The homepage will have 8 mood buttons for users to click: **Happy** button, **Sad** button, **Excited** button, **Tired** button, **Scared** button, **Anxious** button, **Confused** button, **Bored** button.
 
@@ -53,7 +55,7 @@ The background colour for the quote would also change following the colour of th
 
 API used in this app is [**Famous Quotes API**](https://rapidapi.com/saicoder/api/famous-quotes4/).
 
-This app is deployed on **AWS S3**, and using **CloudFront CDN**.
+This app is deployed on **Netlify**.
 
 &nbsp;  
 
