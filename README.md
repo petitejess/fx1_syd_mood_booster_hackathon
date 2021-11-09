@@ -61,4 +61,4 @@ This app is deployed on **Netlify**.
 
 ## Acknowledgement
 
-[Ana Lazarevska](https://github.com/aplazarevska), [Duong Pham](https://github.com/pduong987) and [Jessica Gozali](https://github.com/petitejess)Jessica Gozali would like to thank our awesome Coder Academy educators (a.k.a. mentors), Nandini and Alex for helping us to make things possible!
+[Ana Lazarevska](https://github.com/aplazarevska), [Duong Pham](https://github.com/pduong987) and [Jessica Gozali](https://github.com/petitejess) would like to thank our awesome Coder Academy educators (a.k.a. mentors), Nandini and Alex for helping us to make things possible!
