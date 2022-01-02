@@ -47,7 +47,7 @@ async function getQuote(category, bgColor) {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "famous-quotes4.p.rapidapi.com",
-        "x-rapidapi-key": "b4096686a4msh43536491990dcd7p1cbadcjsnf3dbd6782036"
+        "x-rapidapi-key": "1acf301addmsh1cf3ba4f25f1c0dp10e434jsn0c3fee614769"
       }
     });
     let quote = await response.json();
